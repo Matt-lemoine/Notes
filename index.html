@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Matthew Lemoine</title>
-        <link rel="icon" type="image/x-icon" href="M.png">
-    </head>    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>Notes in Tab</title>
+        <!-- <link rel="icon" type="image/x-icon" href="If_we_ever_make_a_logo.png"> -->
+    </head> <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-    h1{font-size: 2.5em;text-align:center;}
-    h2{font-size: 1.875em;}
-    h3{font-size: 1.5em;}
-    p{font-size: 1em;}
+        h1{font-size: 2.5em;text-align:center;}
+        h2{font-size: 1.875em;}
+        h3{font-size: 1.5em;}
+        p{font-size: 1em;}
 
-    body {
-    height: 100%;
-    margin: 0;
-    font-family: "Arial";
-    font-size: 18px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    } 
+        body {
+        height: 100%;
+        margin: 0;
+        font-family: "Arial";
+        font-size: 18px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        } 
 
-    li {padding-bottom: 10px;}
+        li {padding-bottom: 10px;}
     </style>
 
 <body>
 
-    <script src="navigation.js"></script>
+<!-- The following piece is necessary at the beginning of each of the HTML files so that the navigation works. -->
 
-    <main style="width: 80%; margin: auto;">
+<script src="navigation.js"></script>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "30%";
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<span style="font-size:30px;cursor:pointer;padding: 10px;" onclick="openNav()">&#9776; </span>
+<main style="width: 80%; margin: auto;">
 
-    <div style="text-align: center;">
-        <h1 style="margin-bottom: -5px;">Notes</h1>
-    </div>
+<!----------------------------------------------------------------->
 
-    <p>Welcome to the Home page! We hope that through these notes and animations you are able to learn and process mathematics. <br>
-    Below is a rough skeleton of the website.</p>
+<h1>Notes</h1>
+<p>Welcome to Notes. Look to the left for specific courses you may be interested in learning about.</p>
 
-    <ol>
-        <li>Calculus II</li>
-        <ol type="A">
-            <li>Integration Techniques</li>
-            <ol type="a">
-                <li>Integration by parts</li>
-                <li>u-substitution</li>
-                <li>Partial Fraction Decomposition</li>
-            </ol>
+<ol>
+    <li>Calculus II</li>
+    <ol type="A">
+        <li>Integration Techniques</li>
+        <ol type="a">
+            <li>Integration by parts</li>
+            <li>u-substitution</li>
+            <li>Partial Fraction Decomposition</li>
         </ol>
-        <li>Calculus III</li>
-        <li>Linear Algebra</li>
     </ol>
+    <li>Calculus III</li>
+    <li>Linear Algebra</li>
+</ol>
 
-
-
-
-    <div style="height: 50px;"></div>
-
-    </main>
-
-    <script src="footer.js"></script>
-
+</main>
 </body>
-
-</html>
+</html> 
