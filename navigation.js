@@ -63,6 +63,7 @@ Navigation.innerHTML = `
       <li><a style="float: left;" href="Calculus_II/Calculus_II_Main.html">Calculus II</a></li>
       <li><a style="float: left;" href="Calculus_III/Calculus_III_Main.html">Calculus III</a></li>
       <li><a style="float: left;" href="Linear_Algebra/Linear_Algebra_Main.html">Linear Algebra</a></li>
+      <li><a style="float: left;" href="Contact.html">Contact Us</a>
   </ul>
 </div>
 `;
