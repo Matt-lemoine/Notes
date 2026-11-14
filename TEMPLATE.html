@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Notes in Tab</title>
+    <!-- <link rel="icon" type="image/x-icon" href="If_we_ever_make_a_logo.png"> -->
+    <link rel="stylesheet" href="notes-theme.css">
+</head> 
+
+<body>
+
+<!-- The following piece is necessary at the beginning of each of the HTML files so that the navigation works. -->
+
+<script src="navigation.js"></script>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "30%";
+    }
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<span style="font-size:30px;cursor:pointer;padding: 10px;" onclick="openNav()">&#9776; </span>
+<main style="width: 80%; margin: auto;">
+
+<!----------------------------------------------------------------->
+
+<h1>This a Template html page fo us to reference.</h1>
+<p>
+    When you want to talk you have to use the &lt;p&gt;, then you have to use &lt;/p&gt; to close off the paragraph.
+
+    If you want to make a line break, you have to put in the command &lt;br&gt;
+</p>
+
+<p>
+    To make a list you can do the following:
+    <ul>
+        <li>unordered list</li>
+        <li>the commands are &lt;ul&gt; to denote where the list begins and &lt;li&gt; to make the list items</li>
+    </ul>
+
+    <ol>
+        <li>ordered list</li>
+        <li>the commands are &lt;ol&gt; to denote where the list begins and &lt;li&gt; to make the list items</li>
+        <ol type="a">
+            <li>sublist</li>
+            <li>To make a sub list, you must use the same command to denote where it starts, then specify what type of letter you would like to use.</li>
+        </ol>
+    </ol>
+</p>
+
+<p style="text-align: center;">
+    To make a centered text use the command style="text-align: center;" <br>
+    <strong>To bold text, use the strong command.</strong> <br>
+    <em>To italicize text, use the em command.</em> <br>
+    <u>To underline text, use the u command.</u>
+</p>
+
+<p>
+    To use math mode, you can use MathML, <br>
+    <div style="text-align: center;">
+        <math display="block">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+            <mo>&#x2212;</mo><mi>b</mi>
+            <mo>&#x00B1;</mo>
+            <msqrt>
+                <msup><mi>b</mi><mn>2</mn></msup>
+                <mo>&#x2212;</mo>
+                <mn>4</mn><mi>a</mi><mi>c</mi>
+            </msqrt>
+            </mrow>
+            <mrow>
+            <mn>2</mn><mi>a</mi>
+            </mrow>
+        </mfrac>
+        </math>
+    </div>
+</p>
+
+<details>
+    <summary>Simple Question expandilbe block: What is Beyonc&eacute;'s Full Name?</summary>
+    <p>Beyonc&eacute; Giselle Knowles-Carter</p>
+</details>
+
+<p>
+    You can also define environments using the &lt;style&gt; command.
+
+    <style>
+        .theorem {
+        display: block;
+        margin: 1.5em 0;
+        font-style: italic;
+        counter-increment: theorem;
+        }
+
+        /* Standard numbered theorem */
+        .theorem::before {
+        content: "Theorem " counter(theorem) ". ";
+        font-weight: bold;
+        font-style: normal;
+        }
+
+        /* Named theorem (uses the custom data-name attribute) */
+        .theorem[data-name]::before {
+        content: "Theorem " counter(theorem) " (" attr(data-name) "). ";
+        font-weight: bold;
+        font-style: normal;
+        }
+    </style>
+
+    <!-- Standard Theorem -->
+    <div class="theorem">
+    There are infinitely many prime numbers.
+    </div>
+
+    <!-- Named Theorem -->
+    <div class="theorem" data-name="Pythagorean Theorem">
+    In a right triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.
+    </div>
+</p>
+
+<p>
+    You can put a video in the page by the following. <br>
+
+    <video width="width: 400" controls>
+        <source src="Videos/big_buck_bunny.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+</p>
+
+<div style="height: 500px; background-color: antiquewhite;">
+    <p>
+        The &lt; div &gt; command can be used to put in extra space where needed.
+    </p>
+</div>
+
+
+<script src="footer.js"></script>
+</main>
+</body>
+</html> 
