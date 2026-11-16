@@ -1,8 +1,20 @@
-// Create a new footer element
-const Navigation = document.createElement('navigation');
+/* Navigation functions */
 
-// Set the content of the footer
-Navigation.innerHTML = `
+function openNav() {
+    document.getElementById("mySidenav").style.width = "30%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+/* Create navigation element */
+
+const newNavigation = document.createElement("nav");
+
+/* Set navigation HTML */
+
+newNavigation.innerHTML = `
 <style>
     .sidenav {
     height: 100%;
@@ -52,12 +64,20 @@ Navigation.innerHTML = `
     }
 
     @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
     }
 </style>
+
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" 
+    class="closebtn" 
+    onclick="closeNav()">&times;</a>
   <ul>
     <li><a style = "float: left"; href = "../index.html">HOME</a></li>
     <li><a style = "float: left"; href = "../Calculus_II/Calculus_II_Main.html">Calculus II</a></li>
@@ -66,11 +86,17 @@ Navigation.innerHTML = `
     <li><a style = "float: left"; href = "../Contact.html">Contact Us</a>
   </ul>
 </div>
+
+<span
+    style="font-size:30px;cursor:pointer;padding:10px;"
+    onclick="openNav()">
+    &#9776;
+</span>
 `;
 
-// Append the newly created footer element to the end of the HTML body
-document.body.appendChild(Navigation);
+/* Append navigation to body */
 
+document.body.appendChild(newNavigation);
 
 // Ok, so when you have html files in a folder like our Calc II, Calc III, and L.A., you have to have a separate navigation to get you out of those folders.
 // So here navigation2.js gets you out of the folders that have those subjects and can put you in any other folder.
